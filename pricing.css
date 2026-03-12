@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+:root{
+    --primary-color:#1bbd36;
+}
+.icons i{
+    margin: 10px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.collapse{
+    font-size: 14px;
+}
+.navbar-nav{
+margin-left: 280px;
+}
+.icons .bi-twitter-x{
+    margin-left: 20px;
+}
+.navbar .navbar-brand{
+    font-size: 20px;
+}
+.navbar-nav .nav-link:hover {
+    color: #1bbd36 !important;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #1bbd36;
+}
+.icons i:hover{
+    color: #1bbd36;
+}
+.about{
+  display: flex;
+  margin-top: 50px;
+}
+.left h2{
+    font-size: 46px;
+    margin-left:100px;
+    margin-top: 40px;
+}
+.right img {
+  width: 724px;
+  height: 568px;
+  margin-right: 35px;
+  margin-top: 50px;
+} 
+.box{
+    background-color: rgba(104, 99, 99, 0.062);
+    padding: 25px;
+    padding-right: 150px;
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 90px;
+    font-weight: 300;
+}
+.box p{
+    font-size: 16px;
+    line-height: 2;
+}
+.box i{
+    color: #1bbd36;
+    margin-right: 10px;
+}
+.box a{
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+}
+
+                       /* Subheader*/
+
+.subheader{
+    background-color: #1bbd36;
+    padding: 20px;
+    margin-top: 50px;
+}
+.navbar{
+    background-color: #fff;
+}
+.navbar-brand{
+    margin-left:115px;
+}
+.subheader a{
+    text-decoration: none;
+    color: white;
+}
+.subheader h3{
+    font-weight: 350;
+    font-size: 26px;
+    margin-left: 12px;
+}
+.subheader .row {
+  display: flex;
+  align-items: center; 
+}
+.subheader .home{
+    margin-left: 205px;
+}
+
+                               /* Payment */
+
+.payment .pbox{
+    border: inherit;
+    padding: 30px;
+    margin: 15px;
+    max-width: 30%;
+    border-radius: 10px;
+    background-color: rgba(0, 140, 255, 0.041);
+}
+.payment h5{
+    font-weight: 450;
+}
+.payment p{
+    font-size: 14px;
+}
+.payment h4{
+    color: #1bbd36;
+    font-size: 40px;
+}
+.payment .butt{
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    /* background-color: #1bbd36; */
+    color: black;
+}
+.payment .butt:hover{
+    background-color: #1bbd36;
+    transition: all 0.3s;
+    border: inherit;
+    color: white;
+}
+.payment .butt1{
+    background-color: #1bbd36;
+    border: inherit;
+    color: #fff;
+}
+.payment .small{
+    padding: 8px;
+}
+.payment li {
+    padding: 0;
+    list-style: none;
+    color:#1bbd36;
+    text-align: left;
+    line-height: 30px;
+}
+.payment ul .wrong span {
+    text-decoration: line-through;
+}
+.payment span{
+    color: #555;
+    font-size: 16px;
+}
+.payment .wrong{
+    color: #d31c1c;
+}
+.payment ul .wrong{
+    font-size: 18px;
+    color: #fd0c0c;
+}
+.payment .lite{
+    color: #999;  
+}
+.price-box{
+  text-align: center;
+}
+
+
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 3s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+                                        /* FOOTER BASE */
+.fbottom {
+  background-color: #111;
+  color: white;
+}
+
+/* Headings */
+.fbottom h5 {
+  color: #1bbd36;
+  margin-bottom: 15px;
+}
+
+/* Paragraph */
+.fbottom p {
+  color: white;
+  font-size: 14px;
+}
+
+/* Links */
+.fbottom a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fbottom a:hover {
+  color: #1bbd36;
+}
+
+/* Contact links */
+.fbottom .contact a {
+  color: #1bbd36;
+}
+
+/* Subscribe */
+.stext {
+  border-radius: 2px;
+}
+
+.stext:focus {
+  border-color: #1bbd36;
+  box-shadow: 0 0 0 0.15rem rgba(27,189,54,0.25);
+}
+
+.sbutt {
+  background-color: #1bbd36 !important ;
+  color: white;
+  border: none;
+}
+.logolink {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* center everything in one line */
+    gap: 20px;
+    padding: 15px 20px;
+    background-color:#111111db;
+    color: white;
+    white-space: nowrap;      /* prevents line break */
+
+}
+
+/* Text */
+.logolink p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+.logolink p span{
+    color: #1bbd36;
+}
+/* Social icons */
+.logolink .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Icon style */
+.logolink .social-icons a {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(90deg,rgba(32, 9, 91, 1) 0%,
+     rgba(95, 65, 171, 1) 58%, rgba(162, 135, 231, 1) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logolink .social-icons ion-icon {
+    font-size: 18px;
+    color: #bbb;
+}
+
+/* Hover */
+.logolink .social-icons a:hover {
+    background: #fff;
+}
+
+.logolink .social-icons a:hover ion-icon {
+    color: #111;
+}
+.menusymbol{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* moblie view*/
+
+@media (min-width:320px) and (max-width:480px){
+
+.about{
+  display: block;
+  margin-top: 30px;
+}
+.left h2{
+    font-size: 36px;
+    margin-left:20px;
+    margin-top: 30px;
+}
+.right img {
+  width: 330px;
+  height: 368px;
+  margin: 20px;
+} 
+.box{
+    background-color: rgba(104, 99, 99, 0.062);
+    /* padding: 25px; */
+    padding-right: 0px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 0px;
+    font-weight: 300;
+}
+.box p{
+    font-size: 14px;
+    line-height: 2;
+}
+.logolink p {
+    font-size: 12px;
+}
+.logolink .social-icons {
+    gap: 3px;
+}
+.logolink .social-icons a {
+    width: 25px;
+    height: 25px;
+}
+.subheader .home{
+    margin-left: 0px;
+}
+.payment .pbox{
+    max-width: 100%;
+    margin: 10px;
+}
+.payment .pbox {
+    margin: 0px;
+}
+.navbar-nav{
+    text-align:center;
+    width:100%;
+}
+
+.navbar-nav .nav-item{
+    margin:8px 0;
+}
+
+.icons{
+    text-align:end;
+    margin-top:10px;
+}
+.navbar-nav{
+margin-left: 100px;
+}
+.navbar-brand {
+    margin-left: 10px;
+}
+}

@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+:root{
+    --primary-color:#1bbd36;
+}
+.icons i{
+    margin: 10px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.collapse{
+    font-size: 14px;
+}
+.navbar-nav{
+margin-left: 280px;
+}
+.icons .bi-twitter-x{
+    margin-left: 20px;
+}
+.navbar .navbar-brand{
+    font-size: 20px;
+}
+.navbar-nav .nav-link:hover {
+    color: #1bbd36 !important;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #1bbd36;
+}
+.icons i:hover{
+    color: #1bbd36;
+}
+.about{
+  display: flex;
+  margin-top: 50px;
+}
+.left h2{
+    font-size: 46px;
+    margin-left:100px;
+    margin-top: 40px;
+}
+.right img {
+  width: 724px;
+  height: 568px;
+  margin-right: 35px;
+  margin-top: 50px;
+} 
+.box{
+    background-color: rgba(104, 99, 99, 0.062);
+    padding: 25px;
+    padding-right: 150px;
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 90px;
+    font-weight: 300;
+}
+.box p{
+    font-size: 16px;
+    line-height: 2;
+}
+.box i{
+    color: #1bbd36;
+    margin-right: 10px;
+}
+.box a{
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+}
+
+                       /* Subheader*/
+
+.subheader{
+    background-color: #1bbd36;
+    padding: 20px;
+    margin-top: 50px;
+}
+.navbar{
+    background-color: #fff;
+}
+.navbar-brand{
+    margin-left:115px;
+}
+.subheader a{
+    text-decoration: none;
+    color: white;
+}
+.subheader h3{
+    font-weight: 350;
+    font-size: 26px;
+    margin-left: 12px;
+}
+.subheader .row {
+  display: flex;
+  align-items: center; 
+}
+.subheader .home{
+    margin-left: 205px;
+}
+                                /* PORTFOLIO */
+
+.portfolio{
+padding:80px 0;
+background:#f7f7f7;
+}
+
+.line{
+width:60px;
+height:3px;
+background:#1bbd36;
+margin:10px auto 20px;
+}
+
+.gallery{
+column-count:3;
+column-gap:20px;
+}
+
+.port-item{
+position:relative;
+margin-bottom:20px;
+}
+
+.gallery img{
+width:100%;
+display:block;
+}
+
+.hoverport{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 15px;
+opacity:0;
+transition:0.9s;
+}
+.port-item:hover .hoverport{
+opacity:1;
+}
+.hoverport h5{
+margin:0;
+font-size:16px;
+}
+
+.hoverport p{
+margin:0;
+font-size:12px;
+}
+.nav-pills .nav-link {
+  color: #1bbd36 !important;
+  background-color: transparent !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #1bbd36 !important;
+  color: #ffffff !important;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #1bbd36 !important;
+  color: #ffffff !important;
+}
+.portfolio .line {
+  width: 50px;
+  height: 3px;
+  background: #1bbd36;
+  margin: 10px auto 20px;
+}
+
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 3s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+                                        /* FOOTER BASE */
+.fbottom {
+  background-color: #111;
+  color: white;
+}
+
+/* Headings */
+.fbottom h5 {
+  color: #1bbd36;
+  margin-bottom: 15px;
+}
+
+/* Paragraph */
+.fbottom p {
+  color: white;
+  font-size: 14px;
+}
+
+/* Links */
+.fbottom a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fbottom a:hover {
+  color: #1bbd36;
+}
+
+/* Contact links */
+.fbottom .contact a {
+  color: #1bbd36;
+}
+
+/* Subscribe */
+.stext {
+  border-radius: 2px;
+}
+
+.stext:focus {
+  border-color: #1bbd36;
+  box-shadow: 0 0 0 0.15rem rgba(27,189,54,0.25);
+}
+
+.sbutt {
+  background-color: #1bbd36 !important ;
+  color: white;
+  border: none;
+}
+.logolink {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* center everything in one line */
+    gap: 20px;
+    padding: 15px 20px;
+    background-color:#111111db;
+    color: white;
+    white-space: nowrap;      /* prevents line break */
+
+}
+
+/* Text */
+.logolink p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+.logolink p span{
+    color: #1bbd36;
+}
+/* Social icons */
+.logolink .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Icon style */
+.logolink .social-icons a {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(90deg,rgba(32, 9, 91, 1) 0%,
+     rgba(95, 65, 171, 1) 58%, rgba(162, 135, 231, 1) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logolink .social-icons ion-icon {
+    font-size: 18px;
+    color: #bbb;
+}
+
+/* Hover */
+.logolink .social-icons a:hover {
+    background: #fff;
+}
+
+.logolink .social-icons a:hover ion-icon {
+    color: #111;
+}
+.menusymbol{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* moblie view*/
+
+@media (min-width:320px) and (max-width:480px){
+
+.about{
+  display: block;
+  margin-top: 30px;
+}
+.left h2{
+    font-size: 36px;
+    margin-left:20px;
+    margin-top: 30px;
+}
+.right img {
+  width: 330px;
+  height: 368px;
+  margin: 20px;
+} 
+.box{
+    background-color: rgba(104, 99, 99, 0.062);
+    /* padding: 25px; */
+    padding-right: 0px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 0px;
+    font-weight: 300;
+}
+.box p{
+    font-size: 14px;
+    line-height: 2;
+}
+.logolink p {
+    font-size: 12px;
+}
+.logolink .social-icons {
+    gap: 3px;
+}
+.logolink .social-icons a {
+    width: 25px;
+    height: 25px;
+}
+.subheader .home{
+    margin-left: 0px;
+}
+.gallery{
+column-count:1;
+}
+.navbar-nav{
+    text-align:center;
+    width:100%;
+}
+
+.navbar-nav .nav-item{
+    margin:8px 0;
+}
+
+.icons{
+    text-align:end;
+    margin-top:10px;
+}
+.navbar-nav{
+margin-left: 100px;
+}
+.navbar-brand {
+    margin-left: 10px;
+}
+}

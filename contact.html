@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPANY</title>
+<link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <nav class=" navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">COMPANY.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT US</a>
+        </li>      
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">PRICING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+      <div class="icons">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i></div>
+    </div>
+  </div>
+</nav>
+    </header>
+
+<section class="subheader">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-6 col-md-8">
+        <h3 class="mb-0">Contact</h3>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <a class="home" href="index.html">Home</a> 
+        <span>/</span>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class=" location">
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.938401184021!2d80.2286043!3d12.9156745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c90a9105035%3A0xf!2sInjambakkam%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000">
+</iframe>
+</section>
+
+
+<section class=" container touch">
+    <div class="detail">
+        <h2> Get in Touch</h2><br>
+        <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+        <div class="item">
+        <i class="bi bi-geo-alt"></i>
+        <h5>Location:</h5></div>
+        <span>A108 Adam Street, New York, NY 535022</span>
+        <div class="line"></div>
+
+        <div class="item">
+        <i class="bi bi-envelope"></i>
+        <h5>Email:</h5></div>
+        <span>A108 Adam Street, New York, NY 535022</span>
+        <div class="line"></div>
+
+        <div class="item">
+        <i class="bi bi-telephone"></i>
+        <h5>Call:</h5></div>
+        <span>A108 Adam Street, New York, NY 535022</span>
+    </div>
+    
+<div class="forms">
+<form id="myform">
+
+<div class="row">
+    <div class="box">
+      <p id="errorname"></p>
+        <input type="text" name="name" id="name" placeholder="𐀪 Your Name">
+        
+    </div>
+
+    <div class="box">
+      <p id="errornumber"></p>
+        <input type="number" name="number" id="number" placeholder="✆ Your Number">
+        
+    </div>
+</div>
+
+<div class="box">
+  <p id="errormail"></p>
+    <input type="text" name="email" id="email" placeholder="✉ Your E-mail">
+    
+</div>
+
+<div class="box">
+  <p id="errorcomments"></p>
+    <textarea name="comments" id="comments" placeholder="𓂃🖋 Your message"></textarea>
+    
+</div>
+<button type="submit">SUBMIT</button>
+</form>
+</div>
+
+</section>
+   
+<script>const myformdata = document.getElementById("myform");
+
+myformdata.addEventListener("submit",(data)=>{
+data.preventDefault();
+
+let name=document.getElementById("name");
+let email=document.getElementById("email");
+let number=document.getElementById("number");
+let comments=document.getElementById("comments");
+
+let errname=document.getElementById("errorname");
+let errnumber=document.getElementById("errornumber");
+let errmail=document.getElementById("errormail");
+let errcomments=document.getElementById("errorcomments");
+
+let isValid=true;
+
+// clear old messages
+errname.textContent="";
+errnumber.textContent="";
+errmail.textContent="";
+errcomments.textContent="";
+
+name.style.border="";
+email.style.border="";
+number.style.border="";
+comments.style.border="";
+
+// NAME
+if(!name.value.trim()){
+    errname.textContent="*Please Fill Your Name";
+    name.style.border="2px solid red";
+    isValid=false;
+}
+
+// EMAIL
+let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!email.value.trim()){
+    errmail.textContent="*Please Fill Your Email";
+    email.style.border="2px solid red";
+    isValid=false;
+}
+else if(!emailPattern.test(email.value.trim())){
+    errmail.textContent="*Please enter a valid email";
+    email.style.border="2px solid red";
+    isValid=false;
+}
+
+// NUMBER
+let mobilepattern=/^[6-9]\d{9}$/;
+
+if(!number.value.trim()){
+    errnumber.textContent="*Please Fill Your Number";
+    number.style.border="2px solid red";
+    isValid=false;
+}
+else if(!mobilepattern.test(number.value.trim())){
+    errnumber.textContent="*Please enter a valid number";
+    number.style.border="2px solid red";
+    isValid=false;
+}
+
+// COMMENTS
+if(!comments.value.trim()){
+    errcomments.textContent="*Please Fill Your Message";
+    comments.style.border="2px solid red";
+    isValid=false;
+}
+
+if(isValid){
+    alert("Data submitted");
+
+    const userInfo={
+        name:name.value.trim(),
+        email:email.value.trim(),
+        number:number.value.trim(),
+        comments:comments.value.trim()
+    }
+
+    console.log(userInfo);
+    myformdata.reset();
+}
+
+});
+</script>
+
+
+
+<footer class="fbottom py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Contacts</h5>
+        <p>1st Cross Street Hanuman colony, Injambakkam</p>
+        <p>Phone:
+          <a href="tel:+919486114659">+91 9486114659</a>
+        </p>
+        <p>Email:
+          <a href="mailto:dhanushvenkat2003@gmail.com">dhanushvenkat@gmail.com</a>
+        </p>
+        <p>We are open Mon–Fri: 10 am – 8 pm</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Product Management</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">App Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Subscribe</h5>
+        <p>Subscribe to our newsletter for latest updates.</p>
+        <form class="d-flex">
+          <input type="email" class="form-control me-2 stext" placeholder="Enter your email">
+          <button class="btn sbutt">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<div class="logolink">
+        <p>Company © 2026. Design by <span>Dhanush</span></p>
+        <div class="social-icons">
+    <a href="https://www.facebook.com/vijay.dhanush.3532" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="https://twitter.com/Dhanush_venkat8" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+    <a href="https://www.instagram.com/dhanush_venkat__" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="https://www.linkedin.com/in/dhanush-v-93542b3b0" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+    <a href="https://github.com/Dhanush-1508" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>  
+    </div> 
+    </div>
+
+      <script>
+    const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".fade-in").forEach(el => {
+  observer.observe(el);
+});
+  </script>
+
+</body>
+</html>
